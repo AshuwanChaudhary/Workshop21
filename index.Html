@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="Ep46CaptainAizen.webp" alt="My Photo" class="profile-photo">
+            <h1>Hi, I'm Ashuwan Chaudhary</h1>
+            <p>BIT Student & Noob Web Developer</p>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a BIT student passionate about web development. I enjoy creating websites but endup having problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section - STEP 1 -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="45%"></div>
+                    </div>
+                    <span class="skill-percent">45%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="10%"></div>
+                    </div>
+                    <span class="skill-percent">10%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="15%"></div>
+                    </div>
+                    <span class="skill-percent">15%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="0%"></div>
+                    </div>
+                    <span class="skill-percent">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>My Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <div class="college-with-logo">
+                        <img src="Bic.png" alt="Biratnagar International College" class="college-logo">
+                        <div class="college-details">
+                            <h3>Biratnagar International College</h3>
+                            <p><strong>Bachelor in Information Technology (BIT)</strong></p>
+                            <p>Currently Studying</p>
+                            <a href="https://bicnepal.edu.np" target="_blank" class="college-link">Visit College Website</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="college-with-logo">
+                        <img src="sagarmatha.png" alt="Sagarmatha School" class="college-logo">
+                        <div class="college-details">
+                            <h3>Sagarmatha Secondary Boarding School</h3>
+                            <p><strong>+2 in Science/Management</strong></p>
+                            <p>Completed</p>
+                            <a href="https://sagarmathaschool.edu.np" target="_blank" class="college-link">Visit School Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - STEP 3 -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project" data-url="https://example.com/underwater-game">
+                    <h3>Underwater Game</h3>
+                    <p>I made the game using C++ in Unity</p>
+                </div>
+                <div class="project" data-url="https://example.com/weather-app">
+                    <h3>Weather App</h3>
+                    <p>I made weather app using HTML, CSS, JavaScript and PHP</p>
+                </div>
+                <div class="project" data-url="https://example.com/banking-system">
+                    <h3>Banking System</h3>
+                    <p>I made Banking system using Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section - STEP 4 & 5 -->
+    <section id="media">
+        <div class="container">
+            <h2>Media Gallery</h2>
+            
+            <!-- Video - STEP 4 -->
+            <div class="media-item">
+                <h3>My Introduction Video</h3>
+                <video controls width="100%">
+                    <source src="Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Audio - STEP 4 -->
+            <div class="media-item">
+                <h3>My Favorite Audio</h3>
+                <audio controls>
+                    <source src="audio.mp4" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Canvas - STEP 4 -->
+            <div class="media-item">
+                <h3>Interactive Canvas - Click the Moving Dot!</h3>
+                <canvas id="myCanvas" width="400" height="200"></canvas>
+                <div class="canvas-info">
+                    <p>Score: <span id="score">0</span></p>
+                    <button id="reset-game" class="game-btn">Reset Game</button>
+                </div>
+            </div>
+
+            <!-- Image Slider - STEP 5 -->
+            <div class="media-item">
+                <h3>Project Gallery</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="underwater game.png" alt="Project 1" class="slide active">
+                        <img src="weather app.jpg" alt="Project 2" class="slide">
+                        <img src="Banking system.webp" alt="Project 3" class="slide">
+                    </div>
+                    <button class="slider-btn prev">&#10094;</button>
+                    <button class="slider-btn next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - STEP 2 -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="form-message"></div>
+            
+            <!-- Keep your existing contact info -->
+            <div class="contact-info">
+                <p>Email: tashuwan@gmail.com</p>
+                <p>Phone: +977 9000000000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button - STEP 7 -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <!-- JavaScript -->
+    <script>
+        // Animated Skill Bars - STEP 1
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            
+            // Function to check if element is in viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            
+            // Function to animate skill bars
+            function animateSkillBars() {
+                skillBars.forEach(bar => {
+                    if (isInViewport(bar) && bar.style.width === '') {
+                        const width = bar.getAttribute('data-width');
+                        bar.style.width = width;
+                    }
+                });
+            }
+            
+            // Animate on scroll
+            window.addEventListener('scroll', animateSkillBars);
+            
+            // Animate on page load if already in view
+            animateSkillBars();
+
+            // Contact Form Validation - STEP 2
+            const contactForm = document.getElementById('contact-form');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const messageError = document.getElementById('message-error');
+            const formMessage = document.getElementById('form-message');
+
+            // Validation functions
+            function validateName() {
+                const name = nameInput.value.trim();
+                if (name === '') {
+                    nameError.textContent = 'Name is required';
+                    return false;
+                }
+                if (name.length < 2) {
+                    nameError.textContent = 'Name must be at least 2 characters';
+                    return false;
+                }
+                nameError.textContent = '';
+                return true;
+            }
+
+            function validateEmail() {
+                const email = emailInput.value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (email === '') {
+                    emailError.textContent = 'Email is required';
+                    return false;
+                }
+                if (!emailRegex.test(email)) {
+                    emailError.textContent = 'Please enter a valid email address';
+                    return false;
+                }
+                emailError.textContent = '';
+                return true;
+            }
+
+            function validateMessage() {
+                const message = messageInput.value.trim();
+                if (message === '') {
+                    messageError.textContent = 'Message is required';
+                    return false;
+                }
+                if (message.length < 10) {
+                    messageError.textContent = 'Message must be at least 10 characters';
+                    return false;
+                }
+                messageError.textContent = '';
+                return true;
+            }
+
+            // Real-time validation
+            nameInput.addEventListener('input', validateName);
+            emailInput.addEventListener('input', validateEmail);
+            messageInput.addEventListener('input', validateMessage);
+
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const isNameValid = validateName();
+                const isEmailValid = validateEmail();
+                const isMessageValid = validateMessage();
+                
+                if (isNameValid && isEmailValid && isMessageValid) {
+                    // Store form data in localStorage
+                    const formData = {
+                        name: nameInput.value.trim(),
+                        email: emailInput.value.trim(),
+                        message: messageInput.value.trim(),
+                        timestamp: new Date().toISOString()
+                    };
+                    
+                    localStorage.setItem('contactFormData', JSON.stringify(formData));
+                    
+                    // Show success message
+                    formMessage.textContent = 'Form submitted successfully! Redirecting...';
+                    formMessage.className = 'success-message';
+                    
+                    // Redirect to form details page after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = 'form-details.html';
+                    }, 2000);
+                    
+                    // Clear form
+                    contactForm.reset();
+                } else {
+                    formMessage.textContent = 'Please fix the errors above';
+                    formMessage.className = 'error-message-general';
+                }
+            });
+
+            // Open Projects with JavaScript - STEP 3
+            const projectCards = document.querySelectorAll('.project');
+            projectCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const projectUrl = this.getAttribute('data-url');
+                    if (projectUrl && projectUrl !== '#') {
+                        window.location.href = projectUrl;
+                    }
+                });
+            });
+
+            // Canvas Game - STEP 4
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            let score = 0;
+            let dotX = Math.random() * 350;
+            let dotY = Math.random() * 150;
+            let dotSpeedX = 2;
+            let dotSpeedY = 2;
+            let gameActive = true;
+
+            function drawGame() {
+                if (!gameActive) return;
+                
+                // Clear canvas
+                ctx.clearRect(0, 0, 400, 200);
+                
+                // Draw background
+                ctx.fillStyle = '#34495e';
+                ctx.fillRect(0, 0, 400, 200);
+                
+                // Draw score
+                ctx.fillStyle = 'white';
+                ctx.font = '16px Arial';
+                ctx.fillText(`Score: ${score}`, 10, 20);
+                
+                // Draw instructions
+                ctx.fillStyle = '#bdc3c7';
+                ctx.font = '12px Arial';
+                ctx.fillText('Click the red dot to score points!', 10, 190);
+                
+                // Move the dot
+                dotX += dotSpeedX;
+                dotY += dotSpeedY;
+                
+                // Bounce off walls
+                if (dotX <= 15 || dotX >= 385) {
+                    dotSpeedX = -dotSpeedX;
+                }
+                if (dotY <= 15 || dotY >= 185) {
+                    dotSpeedY = -dotSpeedY;
+                }
+                
+                // Draw the moving dot
+                ctx.fillStyle = '#e74c3c';
+                ctx.beginPath();
+                ctx.arc(dotX, dotY, 15, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Continue the game loop
+                requestAnimationFrame(drawGame);
+            }
+
+            // Click event for the dot
+            canvas.addEventListener('click', function(e) {
+                if (!gameActive) return;
+                
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                // Check if click is on dot
+                const distance = Math.sqrt((x - dotX) ** 2 + (y - dotY) ** 2);
+                if (distance < 15) {
+                    score++;
+                    document.getElementById('score').textContent = score;
+                    
+                    // Move dot to new random position
+                    dotX = Math.random() * 350;
+                    dotY = Math.random() * 150;
+                    
+                    // Increase speed slightly
+                    dotSpeedX *= 1.1;
+                    dotSpeedY *= 1.1;
+                }
+            });
+
+            // Reset game button
+            document.getElementById('reset-game').addEventListener('click', function() {
+                score = 0;
+                document.getElementById('score').textContent = score;
+                dotX = Math.random() * 350;
+                dotY = Math.random() * 150;
+                dotSpeedX = 2;
+                dotSpeedY = 2;
+                gameActive = true;
+                drawGame();
+            });
+
+            // Start the game
+            drawGame();
+
+            // Image Slider - STEP 5
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            let currentSlide = 0;
+
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+            }
+
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+
+            // Dark/Light Mode Toggle - STEP 6
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                if (document.body.classList.contains('dark-mode')) {
+                    themeToggle.textContent = '☀️ Light Mode';
+                } else {
+                    themeToggle.textContent = '🌙 Dark Mode';
+                }
+            });
+
+            // Back to Top Button - STEP 7
+            const backToTopBtn = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
